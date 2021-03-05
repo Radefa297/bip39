@@ -37,7 +37,7 @@ function pbkdf2Promise(
 }
 
 function normalize(str?: string): string {
-  return (str || '').normalize('NFKD');
+  return str || '';
 }
 
 function lpad(str: string, padString: string, length: number): string {
