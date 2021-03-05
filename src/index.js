@@ -24,7 +24,7 @@ function pbkdf2Promise(password, saltMixin, iterations, keylen, digest) {
     }));
 }
 function normalize(str) {
-    return (str || '').normalize('NFKD');
+    return str || '';
 }
 function lpad(str, padString, length) {
     while (str.length < length) {
